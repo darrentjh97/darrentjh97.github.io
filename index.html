@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Home Page</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+<header>  
+    <nav class='nav'>
+        <div class="menu-wrap">
+            <input type="checkbox" class="toggler">
+            <div class="hamburger">
+                <div>
+                    <h2 id="before">Menu</h2>
+                    <h2 id="after">Close</h2>
+                </div>
+            </div>
+            <div class="menu">
+                <div class="menuBackground">
+                    <div class="links">
+                        <ul>
+                            <li><a href="index.html" class="active">Home</a></li>
+                            <li><a href="works.html">Works</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+</header>  
+<main>
+    <article class="slideshow">
+        <input type="radio" name="slide" id="item-1" checked="checked" />
+        <div class="slideshow-item">
+            <div class="intro">
+                <h1 class="title" id="title1">Hi I’m Darren</h1>
+                <p class="description">A freelance photographer & videographer.</p>
+                <p class="category"><em>/ ABOUT ME</em></p>
+            </div>
+            <figure class="image-holder">
+                <img id="shadow1" src="images/self_photo.jpg" alt="self display photo">
+            </figure>
+            <div class="controls">
+                <label for="item-4" class="previous">PREV</label>
+                <label for="item-2" class="next">NEXT</label>
+            </div>
+        </div>
+        <input type="radio" name="slide" id="item-2" />
+        <div class="slideshow-item">
+            <div class="intro">
+                <a href="#">
+                    <h2 class="title" id="title2">Naiise Singapore</h2>
+                </a>
+                <p class="description">Product Styling and Direction</p>
+                <p class="category"><em>/ WORK - PHOTOGRAPHY</em></p>
+            </div>
+            <figure class="image-holder">
+                <img id="shadow2" src="images/naiise_1.jpg" alt="naiise project cover image">
+            </figure>
+            <div class="controls">
+                <label for="item-1" class="previous">PREV</label>
+                <label for="item-3" class="next">NEXT</label>
+            </div>
+        </div>
+        <input type="radio" name="slide" id="item-3" />
+        <div class="slideshow-item">
+            <div class="intro">
+                <a href="#">
+                    <h2 class="title" id="title3">[ 君の名は。]</h2>
+                </a>
+                <p class="description">Concept<br>Photography</p>
+                <p class="category"><em>/ WORK - PHOTOGRAPHY</em></p>
+            </div>
+            <figure class="image-holder">
+                <img id="shadow3" src="images/kimi_no_na_wa_1.jpg" alt="kimi no na wa project cover image">
+            </figure>
+            <div class="controls">
+                <label for="item-2" class="previous">PREV</label>
+                <label for="item-4" class="next">NEXT</label>
+            </div>
+        </div>
+        <input type="radio" name="slide" id="item-4" />
+        <div class="slideshow-item">
+            <div class="intro">
+                <a href="#">
+                    <h2 class="title" id="title4">Taiwan Showcase</h2>
+                </a>
+                <p class="description">School<br>Trip Montage</p>
+                <p class="category"><em>/ WORK - VIDEOGRAPHY</em></p>
+            </div>
+            <figure class="image-holder">
+                <img id="shadow4" src="images/taiwan_cover.jpg" alt="taiwan showcase cover image">
+            </figure>
+            <div class="controls">
+                <label for="item-3" class="previous">PREV</label>
+                <label for="item-1" class="next">NEXT</label>
+            </div>
+        </div>
+    </article>
+</main>
+<footer id="footer">
+    <div class="footerInfo">
+        <h2> <strong>About Me </strong></h2>
+        <p> A photographer & videographer based in Brisbane. Available for any photo/video projects you may have.
+        </p>
+        <h2> <strong>Let’s create something amazing! </strong></h2>
+        <p>
+        <em><a href="mailto:darrentjh97@gmail.com">Darrentjh97@gmail.com</a></em>
+        </p>
+    </div>
+    <div class="footerInfo">
+        <div class="footerLinks">
+            <ul>
+                <li><a href="index.html" class="active"> Home</a></li>
+                <li><a href="works.html"> Works</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+        <p>
+        © 2020, Designed & Developed By Darren Teo.
+        </p>
+    </div>
+</footer>
+
+</body>
+<!--to remove transition bug in chrome-->
+<script> </script>
+<!--empty script-->
+
+</html>

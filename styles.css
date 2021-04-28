@@ -1,0 +1,551 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,600;1,500&family=PT+Serif:ital@0;1&display=swap" rel="stylesheet');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+@media all {
+    /* sets the base font size for all user agents that support media queries */
+    html {
+        font-size: 38.5%;
+    }
+}
+
+body {
+    line-height: 1.6;
+    background: #fff;
+    text-rendering: optimizeLegibility;
+    overflow-x: hidden;
+}
+
+h1,
+h2 {
+    font-family: 'PT Serif', serif;
+    font-weight: 500;
+}
+
+p {
+    font-family: 'Montserrat', sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/*home page and format styles start*/
+
+/*hamburger start*/
+
+.nav {
+    height: 12vh;
+    position: fixed;
+    z-index: 5;
+    top: 0;
+    right: 0;
+}
+
+.menu-wrap {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 1;
+    display: flex;
+    justify-content: flex-end;
+    height: 11vh;
+    width: 30vw;
+}
+
+.toggler {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 2;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.hamburger {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    padding-right: 5vw;
+    background: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.hamburger h2 {
+    font-size: 4rem;
+}
+
+#before {
+    position: absolute;
+}
+
+#after {
+    visibility: hidden;
+}
+
+.toggler:checked ~ .hamburger #after {
+    visibility: visible;
+}
+
+.toggler:checked ~ .hamburger #before {
+    visibility: hidden;
+}
+
+.toggler:checked ~ .menu {
+    visibility: visible;
+}
+
+.toggler:checked ~ .hamburger h2 {
+    color: white;
+}
+
+.toggler:checked ~ .menu .menuBackground {
+    transform: scale(1);
+    transition-duration: 0.75s;
+}
+
+.toggler:checked ~ .menu .menuBackground .links {
+    opacity: 1;
+    transition: opacity 0.4s ease 0.4s;
+}
+
+.menu-wrap .menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    visibility: hidden;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.menuBackground {
+    background: #0099ce;
+    border-radius: 100%;
+    width: 400vw;
+    height: 200vh;
+    display: flex;
+    flex: none;
+    align-items: center;
+    justify-content: center;
+    transform: scale(0);
+    transition: all 0.4s ease;
+
+}
+
+.links {
+    text-align: center;
+    max-width: 90vw;
+    max-height: 100vh;
+    opacity: 0;
+    transition: opacity 0.4s ease;
+}
+
+.links li {
+    list-style: none;
+    color: #fff;
+    font-size: 1.5rem;
+    padding: 1rem;
+}
+
+.links a {
+    color: inherit;
+    transition: color 0.4s ease;
+    font-size: 8rem;
+}
+
+/*hamburger end*/
+
+
+img {
+    width: 85vw;
+    height: 54vh;
+    object-fit: cover;
+}
+
+#shadow1 {
+    box-shadow: 5vw 5vw #bb93dd;
+}
+
+#shadow2 {
+    box-shadow: 5vw 5vw #8cdbf1;
+}
+
+#shadow3 {
+    box-shadow: 5vw 5vw #ffb1bd;
+}
+
+#shadow4 {
+    box-shadow: 5vw 5vw #71e4d1;
+}
+
+#shadow5 {
+    box-shadow: 5vw 5vw #ffc888;
+}
+
+
+.image-holder {
+    width: 90vw;
+    height: 57vh;
+    margin: 0 5vw;
+
+}
+
+.intro {
+    position: relative;
+    height: 19vh;
+    width: 90%;
+    margin: 0 5%;
+
+}
+
+.intro .title {
+    display: inline-block;
+    z-index: 2;
+    line-height: 1.1;
+}
+
+.intro h1 {
+    font-size: 7rem;
+}
+.intro h2 {
+    font-size: 5.8rem;
+}
+
+#title1 {
+    color: #7a5fc4;
+}
+
+#title2 {
+    color: #0099ce;
+}
+
+#title3 {
+    color: #fa41b6;
+}
+
+#title4 {
+    color: #00a98e;
+}
+
+#title5 {
+    color: #ff8767;
+}
+
+#title6 {
+    color: #0099ce;
+}
+
+
+.description {
+    position: relative;
+    width: 85%;
+    z-index: 1;
+    margin: 1rem 0 0 4rem;
+    font-size: 3.5rem;
+}
+
+
+.category {
+    position: relative;
+    z-index: 1;
+    margin: 1rem 0 0 4rem;
+    font-size: 1.5rem;
+}
+
+.slideshow {
+    width: 100%;
+    height: 86vh;
+    position: relative;
+    line-height: 750px;
+    padding-bottom: 30px;
+    margin-top: 12vh;
+}
+
+.slideshow input[type=radio] {
+    display: none;
+}
+
+.slideshow-item {
+    width: 100%;
+    line-height: 1.5;
+    position: absolute;
+    top: 0;
+    opacity: 0;
+    transition: .3s ease-out opacity
+}
+
+.slideshow .slideshow-item label {
+    position: relative;
+    width: 20%;
+    font-size: 3rem;
+}
+
+
+.slideshow .slideshow-item label.previous {
+    display: inline-block;
+}
+
+.slideshow .slideshow-item label.previous:after {
+    right: auto;
+
+}
+
+.slideshow .slideshow-item label.next {
+    display: inline-block;
+}
+
+.slideshow input[type=radio]:checked + .slideshow-item {
+    opacity: 1
+}
+
+.controls {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    justify-content: flex-start;
+    padding: 0 0 0 5%;
+    margin-top: 1vh;
+}
+
+
+#footer {
+    background-color: #c0e8f1;
+    height: 34vh;
+    display: inline-block;
+    position: relative;
+    z-index: 1;
+}
+
+.footerInfo {
+    width: 90%;
+    margin: 0 5%;
+    display: inline-block;
+
+}
+
+#footer h2 {
+    font-size: 3.8rem;
+    margin-top: 3vh;
+}
+
+#footer p {
+    font-size: 2rem;
+
+}
+
+.footerLinks {
+    margin-top: 3vh;
+
+}
+
+.footerLinks li {
+    list-style: none;
+    color: black;
+    width: 30%;
+    display: inline-block;
+}
+
+.footerLinks a {
+    color: #565656;
+    font-size: 4rem;
+}
+
+.active {
+    text-decoration: line-through;
+}
+
+/*home page and format styles end*/
+
+
+
+/*works page styles start*/
+
+#works {
+    width: 100%;
+    height: 312vh;
+    position: relative;
+    margin-top: 12vh;
+}
+
+.worksIntro {
+    position: relative;
+    height: 17vh;
+    width: 90%;
+    margin: 0 5%;
+
+}
+
+.worksIntro h1 {
+    font-size: 6.2rem;
+    font-style: italic;
+    line-height: 1.3;
+}
+
+.worksIntro p {
+    line-height: 1.5;
+}
+
+.worksExamples {
+    width: 100%;
+    height: 70vh;
+    position: relative;
+    margin-top: 3vh;
+}
+
+.worksExamples h2 {
+    font-size: 5.8rem;
+}
+
+.worksDescription {
+    width: 90vw;
+    margin: 0 5vw 1vh 5vw;
+}
+
+.worksCategory {
+    position: relative;
+    z-index: 1;
+    font-size: 1.7rem;
+    color: #4d4d4d;
+
+}
+
+
+/*works page styles end*/
+
+
+
+/*contact page styles start*/
+#contact {
+    width: 100%;
+    height: 67vh;
+    position: relative;
+    margin-top: 12vh;
+}
+
+.contactIntro {
+    position: relative;
+    height: 18vh;
+    width: 90%;
+    margin: 0 5%;
+}
+
+.contactIntro h1 {
+    font-size: 7rem;
+    font-style: italic;
+    line-height: 1.3;
+}
+
+.contactIntro p {
+    position: relative;
+    width: 90%;
+    z-index: 1;
+    margin: 1rem 0 0 4rem;
+    font-size: 2.7rem;
+    line-height: 1.5;
+}
+
+#worksCredits {
+    position: relative;
+    height: 6vh;
+    width: 90%;
+    margin: 0 5%;
+}
+
+#worksCredits h2 {
+    position: relative;
+    font-size: 2.5rem;
+}
+
+
+fieldset {
+    border: medium none !important;
+    margin-bottom: 10px;
+    min-width: 100%;
+    width: 100%;
+}
+
+#contactForm {
+    width: 90vw;
+    margin: 3vh 5vw 0 5vw;
+    display: inline-block;
+    height: 40vh;
+
+}
+
+#form {
+    width: 85vw;
+    box-shadow: 5vw 5vw #00b1e0;
+    border: 3.5px solid black;
+    padding: 3%;
+
+}
+
+#form input[type="text"],
+#form input[type="email"],
+#form input[type="tel"],
+#form textarea {
+    width: 100%;
+    border: 1px solid black;
+    background: #FFF;
+    margin: 0 0 5px;
+    padding: 5px;
+    font-size: 2rem;
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+#form textarea {
+    height: 15vh;
+    max-width: 100%;
+    resize: none;
+}
+
+#form button[type="submit"] {
+    border: none;
+    background: none;
+    font-size: 2.5rem;
+    font-family: 'PT Serif', serif;
+    font-style: italic;
+
+}
+
+#form button[type="submit"]:hover {
+    background: #43A047;
+    transition: background-color 0.3s ease-in-out;
+}
+
+#form button[type="submit"]:active {
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+
+#form input:focus,
+#form textarea:focus {
+    outline: 0;
+    border: 1px solid black;
+    color: black;
+}
+
+/*contact page styles end*/
