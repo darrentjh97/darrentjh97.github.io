@@ -46,10 +46,12 @@ a {
 
 .nav {
     height: 12vh;
+    width: 100vw;
     position: fixed;
     z-index: 5;
     top: 0;
     right: 0;
+    display: flex;
 }
 
 .menu-wrap {
@@ -212,6 +214,17 @@ img {
 
 }
 
+.logo {
+    width:60vw;
+    display:flex;
+    align-items: center;
+    padding-left: 3vw;
+}
+
+.logo img {
+    width: auto;
+    height:4vh;
+}
 .intro {
     position: relative;
     height: 19vh;
@@ -332,7 +345,7 @@ img {
 
 #footer {
     background-color: #c0e8f1;
-    height: 40vh;
+    height: 42vh;
     display: inline-block;
     position: relative;
     z-index: 1;
