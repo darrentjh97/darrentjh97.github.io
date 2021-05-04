@@ -213,6 +213,11 @@ img {
     margin: 0 5vw;
 
 }
+.image-holder1 {
+    width: 90vw;
+    height: 57vh;
+
+}
 
 .logo {
     width:60vw;
@@ -452,7 +457,7 @@ img {
 /*contact page styles start*/
 #contact {
     width: 100%;
-    height: 67vh;
+    height: 75vh;
     position: relative;
     margin-top: 12vh;
 }
