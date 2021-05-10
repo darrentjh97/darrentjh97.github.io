@@ -187,15 +187,15 @@ img {
 }
 
 #shadow1 {
-    box-shadow: 5vw 5vw #bb93dd;
+    box-shadow: 5vw 5vw #f38c09;
 }
 
 #shadow2 {
-    box-shadow: 5vw 5vw #8cdbf1;
+    box-shadow: 5vw 5vw #be4a3d;
 }
 
 #shadow3 {
-    box-shadow: 5vw 5vw #ffb1bd;
+    box-shadow: 5vw 5vw #573935;
 }
 
 #shadow4 {
@@ -232,7 +232,14 @@ img {
 }
 .intro {
     position: relative;
-    height: 19vh;
+    height: 14vh;
+    width: 90%;
+    margin: 0 5%;
+
+}
+.intro1 {
+    position: relative;
+    height: 12vh;
     width: 90%;
     margin: 0 5%;
 
@@ -252,15 +259,15 @@ img {
 }
 
 #title1 {
-    color: #7a5fc4;
+    color: #f38c09;
 }
 
 #title2 {
-    color: #0099ce;
+    color: #be4a3d;
 }
 
 #title3 {
-    color: #fa41b6;
+    color: #573935;
 }
 
 #title4 {
@@ -268,7 +275,7 @@ img {
 }
 
 #title5 {
-    color: #ff8767;
+    color: #00C8F4;
 }
 
 #title6 {
@@ -433,7 +440,7 @@ img {
 }
 
 .worksExamples h2 {
-    font-size: 5.8rem;
+    font-size: 5.6rem;
 }
 
 .worksDescription {
@@ -482,6 +489,23 @@ img {
     margin: 1rem 0 0 4rem;
     font-size: 2.7rem;
     line-height: 1.5;
+}
+
+.storyDescription {
+    position: relative;
+    width: 90%;
+    z-index: 1;
+    margin: 1rem 0 0 5%;
+    font-size: 2.2rem;
+    line-height: 1.5;
+}
+
+#story h2 {
+    font-size: 6rem;
+}
+
+#story {
+    height: 105vh;
 }
 
 #worksCredits {
