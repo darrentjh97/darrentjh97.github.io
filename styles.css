@@ -20,9 +20,11 @@
 
 body {
     line-height: 1.6;
-    background: #fff;
     text-rendering: optimizeLegibility;
     overflow-x: hidden;
+    background-color: white;
+    /**background-image: url(images/bg.png);
+    background-attachment: fixed; **/
 }
 
 h1,
@@ -179,8 +181,8 @@ a {
 
 
 img {
-    width: 85vw;
-    height: 54vh;
+    width: 100%;
+    height: 100%;
     object-fit: cover;
 }
 
@@ -205,17 +207,18 @@ img {
 }
 
 .image-holder {
-    width: 90vw;
+    width: 85vw;
     height: 57vh;
-    margin: 0 5vw;
-
+}
+.image-holder2 {
+    width: 85vw;
+    height: 57vh;
 }
 
 .intro {
     position: relative;
     height: 19vh;
     width: 90%;
-    margin: 0 5%;
 
 }
 
@@ -274,7 +277,6 @@ img {
     width: 100%;
     height: 86vh;
     position: relative;
-    line-height: 750px;
     padding-bottom: 30px;
     margin-top: 12vh;
 }
@@ -284,12 +286,16 @@ img {
 }
 
 .slideshow-item {
-    width: 100%;
+    width: 95%;
     line-height: 1.5;
     position: absolute;
     top: 0;
     opacity: 0;
-    transition: .3s ease-out opacity
+    transition: .3s ease-out opacity;
+    display: inline-flex;
+    flex-flow: row wrap;
+    margin-left: 5%;
+    justify-content: flex-start;
 }
 
 .slideshow .slideshow-item label {
@@ -321,23 +327,34 @@ img {
     z-index: 1;
     display: flex;
     justify-content: flex-start;
-    padding: 0 0 0 5%;
-    margin-top: 1vh;
+    margin-top: 6vw;
+    width: 100vw;
 }
 
+.controls2 {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    justify-content: flex-start;
+    margin-top: 6vw;
+    width: 100vw;
+}
 
 #footer {
     background-color: #c0e8f1;
-    height: 41vh;
+    height: auto;
     display: inline-block;
     position: relative;
     z-index: 1;
+    width:100%;
 }
 
 .footerInfo {
     width: 90%;
     margin: 0 5%;
-    display: inline-block;
+    display: inline-flex;
+    flex-flow: column wrap;
+    margin-bottom: 2vh;
 
 }
 
@@ -353,8 +370,7 @@ img {
 }
 
 .footerLinks {
-    margin-top: 3vh;
-
+    width: 100%;
 }
 
 .footerLinks li {
@@ -380,18 +396,31 @@ img {
 /*works page styles start*/
 
 #works {
-    width: 100%;
+    width: 90%;
     height: 530vh;
     position: relative;
     margin-top: 12vh;
+    display: inline-flex;
+    flex-flow: column wrap;
+    margin-left: 5%;
+    align-content: flex-start;
+    
+}
+
+#showcase {
+    width: 100%;
+    display: inline-flex;
+    flex-flow:column wrap;
 }
 
 .worksIntro {
     position: relative;
     height: 17vh;
     width: 90%;
-    margin: 0 5%;
+}
 
+.works {
+    top:25vh;
 }
 
 .worksIntro h1 {
@@ -417,7 +446,7 @@ img {
 
 .worksDescription {
     width: 90vw;
-    margin: 0 5vw 1vh 5vw;
+    margin-bottom: 1vh;
 }
 
 .worksCategory {
@@ -433,10 +462,14 @@ img {
 
 /*examples page styles start*/
 
-.example {
+#example {
     width: 100%;
     position: relative;
     margin-top: 12vh;
+    line-height: 1.5;
+    height:auto;
+    display: inline-flex;
+        flex-flow: row wrap;
 }
 .exampleIntro {
     position: relative;
@@ -446,14 +479,16 @@ img {
 }
 
 .exampleImage {
-    width: 100%;
+    width: 90%;
     position: relative;
     margin-top: 3vh;
+    margin-left:5%
 }
 
 .exampleImage p {
     font-size: 2rem;
     margin: 0 5%;
+    margin-top: 3vh;
 }
 
 .exampleImage a {
@@ -469,12 +504,13 @@ img {
     line-height: 1.5;
 }
 
-.example .description {
+#example .description {
     font-size: 3rem;
 }
 .exampleSlides {
     margin-top:7vh;
     height: 63vh;
+    width:90%;
 }
 
 .exampleDescription {
@@ -498,7 +534,7 @@ img {
 /*contact page styles start*/
 #contact {
     width: 100%;
-    height: 61vh;
+    height: auto;
     position: relative;
     margin-top: 12vh;
      margin-bottom: 8vh;
@@ -506,7 +542,6 @@ img {
 
 .contactIntro {
     position: relative;
-    height: 18vh;
     width: 90%;
     margin: 0 5%;
 }
@@ -540,7 +575,6 @@ fieldset {
     width: 90vw;
     margin: 3vh 5vw 0 5vw;
     display: inline-block;
-    height: 40vh;
 
 }
 
@@ -599,3 +633,194 @@ fieldset {
 }
 
 /*contact page styles end*/
+
+/*responsive laptop start*/
+@media only screen and (min-width: 1440px) {
+    .image-holder{
+        width: 40vw;
+        height:65vh;
+    }
+    .image-holder2 {
+    width: auto;
+    height: 65vh;
+    }
+    .intro {
+        width:40vw;
+    }
+    .slideshow {
+        width:90%;
+        margin-left:5%;
+    }
+    .slideshow-item {
+        justify-content: space-between;
+        margin: 0;
+    }
+    .intro h1 {
+    font-size: 10rem;
+    }
+    .intro h2 {
+        font-size: 10rem;
+    }
+    
+    .description {
+        font-size: 5rem;
+    }
+    .category {
+        font-size: 2.5rem;
+    }
+    .controls {
+        width: 87vw;
+        margin-top: 22vh;
+        top: 0;
+        position: absolute;
+        left: 0;
+    }
+    .slideshow {
+        height: 75vh;
+    }
+
+    #shadow1 {
+        box-shadow: 3vw 3vw #bb93dd;
+    }
+
+    #shadow2 {
+        box-shadow: 3vw 3vw #8cdbf1;
+    }
+
+    #shadow3 {
+        box-shadow: 3vw 3vw #ffb1bd;
+    }
+
+    #shadow4 {
+        box-shadow: 3vw 3vw #71e4d1;
+    }
+
+    #shadow5 {
+        box-shadow: 3vw 3vw #ffc888;
+    }
+    .footerInfo {
+        flex-flow: wrap row;
+    }
+    .footerDescription {
+        width: 50%;
+    }
+    #footer h2 {
+    font-size: 5rem;
+    }
+    #footer p {
+    font-size: 3rem;
+    }
+    #footer {
+        height: 39vh;
+    }
+    .worksExamples {
+        width: 30%;
+    }
+    #works{
+        flex-flow: row wrap;
+        height: 275vh;
+    }
+    #showcase {
+        flex-flow: row wrap;
+        justify-content: space-between;
+    }
+    .break {
+        margin-top:15vh; 
+    }
+    .worksIntro h1 {
+    font-size: 10rem;
+    }
+
+    .worksIntro p {
+        line-height: 1.5;
+    }
+
+
+    .worksExamples h2 {
+        font-size: 6rem;
+    }
+
+    .worksCategory {
+        font-size: 2.5rem;
+
+    }
+    .exampleIntro {
+        width: 40vw;
+    }
+    #example {
+        display: inline-flex;
+        flex-flow: row wrap;
+        width: 90%;
+
+    }
+    .exampleSlides {
+        width: 40%;
+    }
+    .controls2 {
+        width: 87vw;
+        top: 10vh;
+        position: absolute;
+        left: -45vw;
+
+    }
+    .works {
+        width: 40%;
+        top:0;
+    }
+    .exampleIntro h1 {
+    font-size: 10rem;
+    }
+    .exampleDescription {
+        display: inline-flex;
+        justify-content: space-between;
+        margin-top: 2vh;
+    }
+    .companyDescription {
+        width: 45%;
+    }
+    .rolesDescription {
+        width:45%
+    }
+    .exampleDescription h1 {
+    font-size: 6rem;
+    }
+    .exampleDescription p {
+    font-size: 3rem;
+    }
+    .exampleImage {
+        width: 40vw;
+        margin-left: 0;
+    }
+    .exampleImage p {
+        font-size: 3rem;
+        margin-top: 5vh
+    }
+    .contactIntro h1 {
+        font-size: 10rem;
+    }
+    .contactIntro p {
+        font-size:3.5rem;
+    }
+    #contactForm {
+        margin-bottom: 4vh;
+    }
+    .menuBackground {
+        width: 300vw;
+        height: 300vh;
+    }
+
+
+}
+
+/*responsive laptop end*/
+
+/*responsive tablet start*/
+@media only screen and (max-width:1390px) and (min-width: 768px) {
+    .works {
+        top:16vh;
+    }
+    .exampleImage p {
+        margin: 4vh 0 0 0;
+    }
+}
+
