@@ -700,9 +700,10 @@ fieldset {
     }
     .footerInfo {
         flex-flow: wrap row;
+        justify-content: space-between;
     }
     .footerDescription {
-        width: 50%;
+        width: 48%;
     }
     #footer h2 {
     font-size: 5rem;
@@ -711,7 +712,7 @@ fieldset {
     font-size: 3rem;
     }
     #footer {
-        height: 39vh;
+        height: auto;
     }
     .worksExamples {
         width: 30%;
