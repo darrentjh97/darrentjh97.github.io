@@ -485,15 +485,8 @@ img {
     margin-left:5%
 }
 
-.exampleImage p {
-    font-size: 2rem;
-    margin: 0 5%;
-    margin-top: 3vh;
-}
 
-.exampleImage a {
-     color: #0099ce;
-}
+
 .exampleIntro h1 {
     font-size: 6.2rem;
     font-style: italic;
@@ -528,6 +521,20 @@ img {
 }
 .exampleDescription p {
     font-size: 2rem;
+}
+
+.webLink1 {
+    display: block;
+    font-size: 2rem;
+    margin: 0 5%;
+    margin-top: 3vh;
+}
+.webLink1 a {
+     color: #0099ce;
+}
+
+.webLink2 {
+    display:none;
 }
 /*example page styles end*/
 
@@ -639,6 +646,7 @@ fieldset {
     .image-holder{
         width: 40vw;
         height:65vh;
+        margin-bottom: 3vw;
     }
     .image-holder2 {
     width: auto;
@@ -649,7 +657,7 @@ fieldset {
     }
     .slideshow {
         width:90%;
-        margin-left:5%;
+        padding-bottom: 0;
     }
     .slideshow-item {
         justify-content: space-between;
@@ -677,6 +685,7 @@ fieldset {
     }
     .slideshow {
         height: 75vh;
+        margin-left: 5%;
     }
 
     #shadow1 {
@@ -751,7 +760,7 @@ fieldset {
     #example {
         display: inline-flex;
         flex-flow: row wrap;
-        width: 90%;
+        margin-left: 0;
 
     }
     .exampleSlides {
@@ -775,6 +784,7 @@ fieldset {
         display: inline-flex;
         justify-content: space-between;
         margin-top: 2vh;
+        margin-bottom: 5vh;
     }
     .companyDescription {
         width: 45%;
@@ -791,6 +801,7 @@ fieldset {
     .exampleImage {
         width: 40vw;
         margin-left: 0;
+        margin-top: 0;
     }
     .exampleImage p {
         font-size: 3rem;
@@ -809,6 +820,18 @@ fieldset {
         width: 300vw;
         height: 300vh;
     }
+    .webLink1 {
+        display: none;
+    }
+    .webLink2 {
+        display: block;
+        font-size: 2.5rem;
+        margin-top: 2vh;
+        margin-left: 4rem;
+    }
+    .webLink2 a {
+     color: #0099ce;
+}
 
 
 }
