@@ -397,9 +397,9 @@ img {
 
 #works {
     width: 90%;
-    height: 530vh;
     position: relative;
     margin-top: 12vh;
+    margin-bottom: 5vh;
     display: inline-flex;
     flex-flow: column wrap;
     margin-left: 5%;
@@ -728,7 +728,7 @@ fieldset {
     }
     #works{
         flex-flow: row wrap;
-        height: 275vh;
+        margin-bottom: 15vh;
     }
     #showcase {
         flex-flow: row wrap;
